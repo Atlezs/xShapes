@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fourshapes/login.dart';
 import 'package:fourshapes/video.dart';
 import 'home_page.dart';
-import 'profile.dart';
 
 void main() => runApp(const Login());
 
@@ -73,7 +72,6 @@ class _MyAppState extends State<MyApp2> {
     final screens = [
       HomePage(data: widget.apiKey),
       Video(),
-      Profile(),
     ];
     return Scaffold(
       appBar: AppBar(

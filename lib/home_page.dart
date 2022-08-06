@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<List<PlaceInfo>> _getProducts() async {
     var data = await http.get(Uri.parse(
-        'https://xshapetest.azurewebsites.net/retrive/' + widget.data));
+        'https://xshapeapi.azurewebsites.net/retrive/' + widget.data));
 
     var jsonData = json.decode(data.body);
 
